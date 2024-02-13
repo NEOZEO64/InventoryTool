@@ -1,0 +1,192 @@
+{
+    "capacitor": {
+        "ceramic": [
+            {"code":  "2", "comment":"mostly 50V", "color":"yellow", "stock":">40", "value":"2pF"},
+            {"code":  "3", "comment":"mostly 50V", "color":"yellow", "stock":"10" , "value":"3pF"},
+            {"code":  "5", "comment":"mostly 50V", "color":"yellow", "stock":">40", "value":"5pF"},
+            {"code": "15", "comment":"mostly 50V", "color":"yellow", "stock":">40", "value":"15pF"},
+            {"code": "22", "comment":"mostly 50V", "color":"yellow", "stock":">40", "value":"22pF"},
+            {"code": "30", "comment":"mostly 50V", "color":"yellow", "stock":">40", "value":"30pF"},
+            {"code": "33", "comment":"mostly 50V", "color":"yellow", "stock":">40", "value":"33pF"},
+            {"code": "47", "comment":"mostly 50V", "color":"yellow", "stock":">40", "value":"47pF"},
+            {"code": "68", "comment":"mostly 50V", "color":"yellow", "stock":">40", "value":"68pF"},
+            {"code": "75", "comment":"mostly 50V", "color":"yellow", "stock":">40", "value":"75pF"},
+            {"code": "82", "comment":"mostly 50V", "color":"yellow", "stock":">40", "value":"82pF"},
+            {"code":"101", "comment":"mostly 50V", "color":"yellow", "stock":">40", "value":"100pF"},
+            {"code":"151", "comment":"mostly 50V", "color":"yellow", "stock":">40", "value":"150pF"},
+            {"code":"221", "comment":"mostly 50V", "color":"yellow", "stock":">40", "value":"220pF"},
+            {"code":"331", "comment":"mostly 50V", "color":"yellow", "stock":">40", "value":"330pF"},
+            {"code":"471", "comment":"mostly 50V", "color":"yellow", "stock":">40", "value":"470pF"},
+            {"code":"681", "comment":"mostly 50V", "color":"yellow", "stock":">40", "value":"680pF"},
+            {"code":"102", "comment":"mostly 50V", "color":"yellow", "stock":">40", "value":"1nF"},
+            {"code":"152", "comment":"mostly 50V", "color":"yellow", "stock":">40", "value":"1.5nF"},
+            {"code":"222", "comment":"mostly 50V", "color":"yellow", "stock":">40", "value":"2.2nF"},
+            {"code":"332", "comment":"mostly 50V", "color":"yellow", "stock":">40", "value":"3.3nF"},
+            {"code":"472", "comment":"mostly 50V", "color":"yellow", "stock":">40", "value":"4.7nF"},
+            {"code":"682", "comment":"mostly 50V", "color":"yellow", "stock":">40", "value":"6.8nF"},
+            {"code":"103", "comment":"mostly 50V", "color":"yellow", "stock":">40", "value":"10nF"},
+            {"code":"153", "comment":"mostly 50V", "color":"yellow", "stock":">40", "value":"15nF"},
+            {"code":"223", "comment":"mostly 50V", "color":"yellow", "stock":">40", "value":"22nF"},
+            {"code":"473", "comment":"mostly 50V", "color":"yellow", "stock":">40", "value":"47nF"},
+            {"code":"683", "comment":"mostly 50V", "color":"yellow", "stock":">40", "value":"68nF"},
+            {"code":"104", "comment":"mostly 50V", "color":"yellow", "stock":">40", "value":"100nF"},
+            {"code": "-1", "comment":"", "color":"white/purple", "stock":"~15", "value":"215pF"},
+            {"code": "2x black, 2x brown, 1x white", "comment":"yellow with color dots", "color":"yellow", "stock":"a few", "value":"88pF"},
+            {"code": "2x black, 2x brown, 1x red", "comment":"yellow with color dots", "color":"yellow", "stock":"a few", "value":"1nF"}
+        ],
+        "electrolyte": [
+            {"value":"0.22µF", "voltage rating": 50},
+            {"value":"0.47µF", "voltage rating": 50},
+            {"value":   "1µF", "voltage rating": 50},
+            {"value": "2.2µF", "voltage rating": 50},
+            {"value": "4.7µF", "voltage rating": 50},
+            {"value":  "10µF", "voltage rating": 25},
+            {"value":  "10µF", "voltage rating": 50},
+            {"value":  "10µF", "voltage rating": 63},
+            {"value":  "20µF", "voltage rating": 50},
+            {"value":  "33µF", "voltage rating": 16},
+            {"value":  "47µF", "voltage rating": 16},
+            {"value": "100µF", "voltage rating": 16},
+            {"value": "100µF", "voltage rating": 50},
+            {"value": "200µF", "voltage rating": 16},
+            {"value": "470µF", "voltage rating": 16}
+        ],
+        "film": [
+            {"comment":"3.3 nF 3300 63-U WIMA B1 2,5"},
+            {"comment":"4.734nF "},
+            {"comment":"56nF 0.056 63-A WIMA U4/U5/U6 10%"},
+            {"comment":"360nF MMK EVOX 9005"},
+            {"comment":"308nF MMK EVOX 8936"},
+            {"comment":"400 4n7 400 glossy transparent grey"},
+            {"comment":"6-7nF BIG WHITE 250V PME 289 MA 40/100/56 RIFA 4n7 Y CA1"},
+            {"comment":"277nF HUGE BLUE 250-CA6 RIFA430 270nJ"},
+            {"comment":"1nF BIG BLUE WIMA FKP 1 FO 1000 1600- 650~"},
+            {"comment":"333nF BIG PINK 0.33J100-S3/ MKC1862"},
+            {"comment":"0.47µF 100V BIG GREY"},
+            {"comment":"0.068µF 100V BIG GREY"},
+            {"comment":"13nF BIG GREEN ,015/400/"}
+        ],
+        "tantalum": [
+            {"value":"0.68µF", "voltage rating":35, "color":"blue"},
+            {"value": "1.5µF", "voltage rating":35, "color":"red"},
+            {"value": "4.7µF", "voltage rating":35, "color":"yellow"},
+            {"value": "4.7µF", "voltage rating":35, "color":"green"},
+            {"value":  "10µF", "voltage rating":35, "color":"yellow"},
+            {"value":  "12µF", "voltage rating":35, "color":"yellow"},
+            {"value":  "15µF", "voltage rating":-1, "color":"yellow"},
+            {"value":  "15µF", "voltage rating":35, "color":"green"},
+            {"value":  "16µF", "voltage rating":-1, "color":"yellow"},
+            {"value":  "22µF", "voltage rating":-1, "color":"yellow"},
+            {"value":  "47µF", "voltage rating":10, "color":"green"},
+            {"value":  "68µF", "voltage rating":10, "color":"green"}
+        ],
+        "polyester": [
+            {"comment":"8.571nF BIG YELLOW 0.01/20/1250 34376103 WAO"}
+        ],
+        "polymer": [
+            {"value": "370µF", "voltage rating":16, "comment":"-"},
+            {"value": "1µF", "voltage rating":3, "comment":"Philips"}
+        ]
+    },
+    "resistor": [],
+    "inductor" : [
+        {"value":"7mH", "comment":"R04644"}
+    ],
+    "crystal" : [
+        {"value":"16MHz"}
+    ],
+    "transisor" : [
+        {"code":    "BC547","type":"NPN","comment":"Switching, Amplifier"},
+        {"code":    "BC557","type":"PNP","comment":"Switching, Amplifier, Low noise, Complement to BC547"},
+        {"code": "A42 B331","type":"NPN","comment":"High voltage"},
+        {"code": "A92 B331","type":"PNP","comment":"High voltage"},
+        {"code":"A733 P331","type":"PNP","comment":"-"},
+        {"code":    "A1015","type":"PNP","comment":"Audio Frequency General Purpose Amplifier Applications, Driver Stage Amplifier Applications"},
+        {"code":"A733 P331","type":"PNP","comment":"-"},
+        {"code":    "S8050","type":"NPN","comment":"General Purpose, Low Power Amplification, Switching"},
+        {"code":    "S8550","type":"PNP","comment":"Amplifiers, switching, voltage regulators"},
+        {"code":    "S9012","type":"PNP","comment":"General purpose, small signal"},
+        {"code":    "S9013","type":"NPN","comment":"1W output amplifier of portable radios in class B Push-Pull Operation"},
+        {"code":    "S9014","type":"NPN","comment":"Pre-Amplifier, Low Level, Low Noise"},
+        {"code":    "S9015","type":"PNP","comment":"Low frequency, low noise"},
+        {"code":    "S9018","type":"NPN","comment":"AM/FM Amplifier, Local Oscillator of FM/VHF Tuner, High current gain bandwidth 1.1GHz"},
+        {"code":    "BFR60","type":"PNP","comment":"audio frequency stage, switch"},
+        {"code":     "C945","type":"NPN","comment":"low power amplification"},
+        {"code":    "C1815","type":"NPN","comment":"Audio Frequency Voltage Amplifier Applications, Low Noise Amplifier Applications"},
+        {"code":   "2N3904","type":"NPN","comment":"BJT"},
+        {"code":   "2N3906","type":"PNP","comment":"BJT, complementary to 2N3904"},
+        {"code":   "2N5401","type":"PNP","comment":"BJT, Audio Amplification, voltage regulation, low power switching"},
+        {"code":   "2N5551","type":"NPN","comment":"Amplifier Transistor"}
+    ],
+    "diode" : [
+        {"code": "1N5408", "type":"rectification", "comment": "very big"},
+        {"code": "1N5844", "type":"rectification", "comment": "very big"},
+        {"code": "1N5819", "type":"rectification", "comment": "middle big"},
+        {"code": "1N5399", "type":"rectification", "comment": "middle big"},
+        {"code": "1N4007", "type":"rectification", "comment": "middle big"},
+        {"code":  "FR107", "type":"rectification", "comment": "middle big"},
+        {"code":  "FR207", "type":"rectification", "comment": "middle big"},
+        {"code": "1N4148", "type":"switching", "comment": "-"},
+        {"code": "BZ X85-C12", "type":"zener", "comment": "12V Zenerspannung"}
+
+    ],
+    "mosfet" : [
+        {"code": "IRLZ44N", "type": "N-channel"},
+        {"code": "IRF5305", "type": "P-channel"}
+    ],
+    "opamp" : [
+        {"code": "LM358P", "type": "dual", "comment": "3V-36V, 1.1MHz, 100dB, General Purpose"},
+        {"code": "LM358N", "type": "dual", "comment": "3V-32V"},
+        {"code": "MCP602", "type": "dual", "comment": "2.7-6V, 2.8MHz"}
+    ],
+    "voltage regulator" : [
+        {"code": "LD1117V33", "voltage rating": 3.3, "current":0.8},
+        {"code": "L7805CV", "voltage rating": 5, "current":1.5},
+        {"code": "L7812CV", "voltage rating":12, "current":1.5}
+    ],
+    "power supply module" : [
+        {"code":"LM2596S", "comment":"step down voltage module: 4V-35V to 1.25V-30V @ 2.5A"},
+        {"code":"MT3608", "comment":"step up voltage module: 2V-24V to 3V-28V @ 2A, e.g. for 5V microcontroller"}
+    ],
+    "shift register" : [
+        {"code":"SN74HC595N", "comment":"2-6V, max. 24Mhz, 8bits, Serial in, parallel out"}
+    ],
+    "hex inverting schmitt trigger" : [
+        {"code":"SN74HC14N"}
+    ],
+    "gate driver" : [
+        {"code": "IR2113", "comment": "600V 2.5A high-side and low-side gate driver IC with shutdown, high voltage, high speed power MOSFET / IGBT driver"}
+    ],
+    "mosfet driver" : [
+        {"code": "TC4428", "comment": "Dual mosfet driver"},
+        {"code": "TC4420", "comment": "6A mosfet driver"}
+    ],
+    "dac / adc" : [
+        {"code": "PCF8591T", "comment": "8bit D/A A/D Converter 2.6-6V I2C Bus"},
+        {"code": "MCP3008", "comment": "10bit 8-channel ADC, SPI, 2.7-5.5V, Sensor Interface, Process Control, Data Acquisition, Battery Operated System"}
+    ],
+    "optocoupler" : [
+        {"code": "4N35", "comment": "1.3V Isolationsspannung 5KV, Stromversorgungsregler, Digitale Logikeingänge, Mikroprozessor-Eingänge"},
+        {"code": "PC123", "comment": "-"}
+    ],
+    "timer" : [
+        {"code": "NE555P"},
+        {"code": "TC555CP"}
+    ],
+    "microcontrollers" : [
+        {"code": "ATtiny13A"},
+        {"code": "ATtiny85"},
+        {"code": "ATtiny84A"},
+        {"code": "ATtiny861A"},
+        {"code": "ATmega168"},
+        {"code": "PIC 12F508-I/P", "comment":"RISC, 4MHz, 0.768KB, 2V-5.5V, Hochstromquelle / Senke für LED"}
+    ],
+    "synth chips" : [
+        {"code": "CEM3340"},
+        {"code": "AS3340"},
+        {"code": "VCDO Wavetable Oscillator"},
+        {"code": "AS3372", "comment": "synth voicing chip"},
+        {"code": "StompLFO Chip"},
+        {"code": "AS3320", "comment": "VCF filter"}
+    ]
+}
