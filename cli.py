@@ -93,7 +93,6 @@ def addFilter(category, value):
         selection = selectionCopy
         print("no resulting items")
         
-
 def removeFilter(category, value):
     global filterUsed
     filterUsed.remove([category,value.lower()])
@@ -103,17 +102,20 @@ def listFilters():
     for f in filterUsed:
         print("{} == {}".format(*f))
 
-
 def printComponent(i):
     global selection
     text = ""
     cp = selection[i]
     keys = list(cp.keys())
     vals = list(cp.values())
-    if "comment" in keys:
+    if "comment" in keys: # put the "comment" column to the right
         iComment = keys.index("comment")
         keys[-1], keys[iComment] = keys[iComment], keys[-1]
         vals[-1], vals[iComment] = vals[iComment], vals[-1]
+    for f in filterUsed: # hide all the obvious columns that is filtered after
+        if f[1] in vals:
+            vals.remove(f[1])
+    
     text = ""
     for v in vals:
         text += str(v)
