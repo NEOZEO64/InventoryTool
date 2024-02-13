@@ -1,5 +1,4 @@
 import json, datetime, os
-  
 
 
 file = "inventory.json"
@@ -128,7 +127,6 @@ def listSelection():
     for i in range(len(selection)):
         printComponent(i)
     print("Shows {} results".format(len(selection)))
-
 
 
 cmdMap = {
