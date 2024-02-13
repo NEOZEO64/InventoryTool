@@ -7,7 +7,7 @@ run = True
 filterUsed = []
 size = os.get_terminal_size().columns
 
-welcome = "\033[0;37;40m---------------------------------------------\n\033[1;31;40mWELCOME TO YOUR COMPONENTS\033[0;37;40m\n---------------------------------------------\nEnter 'help' for ideas"
+welcome = "\033[0;37;48m---------------------------------------------\n\033[1;31;40mWELCOME TO YOUR COMPONENTS\033[0;37;48m\n---------------------------------------------\nEnter 'help' for ideas"
 helpText = "\
 Commands:                             \n\
 LS              - list all components \n\
@@ -37,7 +37,7 @@ categories = dict(sorted(categories.items(), key=lambda item: item[1], reverse=T
 
 # Tool functions
 def printNormal():
-    print("\033[0;37;40m",end="")
+    print("\033[0;37;48m",end="")
 
 def printHighlight():
     print("\033[1;31;40m",end="")
@@ -126,8 +126,6 @@ def listSelection():
     for i in range(len(selection)):
         printComponent(i)
     print("Shows {} results".format(len(selection)))
-
-
 
 
 
