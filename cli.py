@@ -36,12 +36,11 @@ categories = dict(sorted(categories.items(), key=lambda item: item[1], reverse=T
 
 def getNum(txt):
     num = ""
-    num = txt.replace(">","").replace("<","").replace("~","")
-    for i in range(len(txt)):
-        if txt[i].isdigit():
-            num += txt[i]
-        else:
-            break
+    txt = txt.replace(">","").replace("<","").replace("~","")
+    i = 0
+    while i < len(txt) and txt[i].isdigit():
+        num += txt[i]
+        i += 1
     return int(num)
 
 # count total component stocks
