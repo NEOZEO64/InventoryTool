@@ -15,7 +15,6 @@ ADD <cat> <val> - add filter by category & value \n\
 RM <cat> <val>  - clear filter by category & value \n\
 FILTERS         - list current filters \n\
 CLR             - clear whole filter\n\
-SLC <num>       - select component by number in list\n\
 help            - print this text\n\
 stop            - exit the program & save \n\
 save            - save \n\
@@ -60,6 +59,9 @@ for cp in data:
     if cp["component"] not in types:
         types.append(cp["component"])
 
+# count total different components
+diffCpNum = len(data)
+
 # Tool functions
 def printNormal():
     print("\033[0;37;48m",end="")
@@ -97,7 +99,7 @@ def filterData():
         found = 0
         for pair in filterUsed:
             if pair[0] in cp.keys():
-                if cp[pair[0]] == pair[1]:
+                if cp[pair[0]].lower() == pair[1].lower():
                     found += 1
         if found == len(filterUsed):
             finalData.append(cp)
@@ -134,9 +136,17 @@ def addFilter(category, value):
         selection = selectionCopy
         print("no resulting items")
         
-def removeFilter(category, value):
+def removeFilter(category, value = ""):
     global filterUsed
-    filterUsed.remove([category,value.lower()])
+    if value == "":
+        i = 0
+        while i < len(filterUsed):
+            if filterUsed[i][0] == category:
+                del filterUsed[i]
+            else:
+                i += 1
+    else:
+        filterUsed.remove([category,value.lower()])
     filterData()
 
 def listFilters():
@@ -154,12 +164,13 @@ def printComponent(i):
         keys[-1], keys[iComment] = keys[iComment], keys[-1]
         vals[-1], vals[iComment] = vals[iComment], vals[-1]
     for f in filterUsed: # hide all the obvious columns that is filtered after
-        if f[1] in vals:
-            vals.remove(f[1])
+        if f[0] in keys:
+            keys.remove(f[0])
+            vals.remove(cp[f[0]])
     
     text = ""
-    for v in vals:
-        text += str(v)
+    for i in range(len(vals)):
+        text += str(keys[i]) + ":" + str(vals[i])
         text += "\t"
     if len(text) > size:
         text = text[:size]
@@ -190,10 +201,10 @@ selection = data
 welcome = "\
 \033[0;37;48m---------------------------------------------\n\
 \033[1;31;40mWELCOME TO YOUR COMPONENTS\033[0;37;48m\n\
-\033[1;31;40mBrowse {} components in {} categories:\033[0;37;48m\n\
+\033[1;31;40mBrowse {} components ({} different types) in {} categories:\033[0;37;48m\n\
 {}\n\
 ---------------------------------------------\n\
-Enter 'help' for ideas".format(cpNum, len(categories), getStrList(types))
+Enter 'help' for ideas".format(cpNum,diffCpNum, len(categories), getStrList(types))
 
 printNormal()
 print()
