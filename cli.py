@@ -6,7 +6,7 @@ run = True
 filterUsed = []
 size = os.get_terminal_size().columns
 
-welcome = "\033[0;37;48m---------------------------------------------\n\033[1;31;40mWELCOME TO YOUR COMPONENTS\033[0;37;48m\n---------------------------------------------\nEnter 'help' for ideas"
+
 helpText = "\
 Commands:                             \n\
 LS              - list all components \n\
@@ -33,6 +33,33 @@ for cp in data:
         else:
             categories[k] += 1
 categories = dict(sorted(categories.items(), key=lambda item: item[1], reverse=True)) # sort categories
+
+def getNum(txt):
+    num = ""
+    num = txt.replace(">","").replace("<","").replace("~","")
+    for i in range(len(txt)):
+        if txt[i].isdigit():
+            num += txt[i]
+        else:
+            break
+    return int(num)
+
+# count total component stocks
+cpNum = 0
+for cp in data:
+    if "stock" in cp:
+        if cp["stock"] == "a few":
+            cpNum += 3
+        else:
+            cpNum += getNum(cp["stock"])
+    else:
+        cpNum += 3 # just add some standard number
+
+# count total component types
+types = []
+for cp in data:
+    if cp["component"] not in types:
+        types.append(cp["component"])
 
 # Tool functions
 def printNormal():
@@ -76,6 +103,22 @@ def filterData():
         if found == len(filterUsed):
             finalData.append(cp)
     selection = finalData
+
+def getStrList(lst):
+    i = 0
+    finalText = ""
+    while i < len(lst):
+        line = ""
+        while i < len(lst):
+            newLine = line + ", " + lst[i]
+            if len(newLine) < size-3:
+                line = newLine
+            else:
+                break
+            i += 1
+        finalText += line[2:] + "\n"
+    return finalText[:-1]
+
 
 def addFilter(category, value):
     global filterUsed, selection
@@ -129,6 +172,7 @@ def listSelection():
     print("Shows {} results".format(len(selection)))
 
 
+
 cmdMap = {
     "help" : help,
     "stop" : quit,
@@ -143,6 +187,14 @@ cmdMap = {
 }
 
 selection = data
+
+welcome = "\
+\033[0;37;48m---------------------------------------------\n\
+\033[1;31;40mWELCOME TO YOUR COMPONENTS\033[0;37;48m\n\
+\033[1;31;40mBrowse {} components in {} categories:\033[0;37;48m\n\
+{}\n\
+---------------------------------------------\n\
+Enter 'help' for ideas".format(cpNum, len(categories), getStrList(types))
 
 printNormal()
 print()
