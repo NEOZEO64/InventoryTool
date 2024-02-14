@@ -174,7 +174,7 @@
 {"component":"CMOS-logic","code":"CD40106BE", "logic-type":"inverter","comment":"hex-schmitt trigger inverter", "stock":"10"},
 {"component":"CMOS-logic","code":"CD40193BE", "logic-type":"counter","comment":"binary up/down counter (dual clock)", "stock":"10"},
 {"component":"CMOS-logic","code":"SN74HC595N", "logic-type":"shift register", "comment":"2-6V, max. 24Mhz, 8bits, Serial in, parallel out", "stock":"10"},
-{"component":"gate driver","code": "IR2113", "comment": "600V 2.5A high-side and low-side gate driver IC with shutdown, high voltage, high speed power MOSFET / IGBT driver", "stock":"5"},
+{"component":"gate driver","code": "IR2113", "comment": "600V 2.5A high-side and low-side gate driver IC with shutdown, high voltage, high speed power MOSFET / IGBT driver", "stock":5},
 {"component":"mosfet driver","code": "TC4428", "comment": "Dual mosfet driver", "stock":"9"},
 {"component":"mosfet driver","code": "TC4420", "comment": "6A mosfet driver", "stock":"9"},
 {"component":"dac / adc","code": "PCF8591T","stock":"1", "comment": "8bit D/A A/D Converter 2.6-6V I2C Bus"},

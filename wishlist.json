@@ -1,0 +1,4 @@
+[
+    {"component":"voltage regulator","code": "L7815CV", "voltage rating":"15V", "current":"1.5A", "stock":"5"},
+    {"component":"voltage regulator","code": "L7915CV", "voltage rating":"-15V", "current":"1.5A", "stock":"5"}
+]
