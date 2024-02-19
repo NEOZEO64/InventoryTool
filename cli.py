@@ -219,6 +219,8 @@ while run:
         print("Command not found")
         continue
     try:
+        for i in range(2,len(cmdText)):
+            cmdText[i] = cmdText[i].replace("-", " ")
         cmd(*cmdText[1::])
     except TypeError as t:
         print("Wrong argument count:", t)
