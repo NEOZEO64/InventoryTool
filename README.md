@@ -4,7 +4,7 @@
 - This tool should provide **clarity**, which components I have.
 - This tool should answer the following questions
     - Can I build the device I want? Enough parts?
-    - (What can I do with the components else?)
+    - (What else can I do with the components?)
     - (Deliver me datasheets)
 
 ## Screenshot
