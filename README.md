@@ -1,11 +1,13 @@
 # Inventory management tool
 
-- inventory.json contains all my electronic parts. I want to build an analog synthesizer so they have become more and more. I am loosing the overview right now.
 - This tool should provide **clarity**, which components I have.
 - This tool should answer the following questions
-    - Can I build the device I want? Enough parts?
+    - Can I build the device I want? Do I have enough parts?
     - (What else can I do with the components?)
     - (Deliver me datasheets)
+
+inventory.json contains all my electronic parts
+I want to build an analog synthesizer so they have become more and more. (I am loosing the overview right now)
 
 ## Screenshot
 
