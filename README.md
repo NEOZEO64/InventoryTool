@@ -11,7 +11,7 @@ I want to build an analog synthesizer so they have become more and more. (I am l
 
 ## Screenshot
 
-<img src=images/image1.png width=400>
+<img src=images/image1.png width=90%>
 
 
 ## Features now implemented
